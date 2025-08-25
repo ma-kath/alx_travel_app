@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'alx_travel_app.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 env = environ.Env()
-environ.Env.read_env()
+environ.Env.read_env(str(BASE_DIR / 'alx_travel.env'))
 
 DATABASES = {
     'default': {
